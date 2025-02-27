@@ -1,0 +1,191 @@
+/* <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>  
+*/
+
+Body {
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+/* Header and Nav */
+
+.portfolio h3 {
+ color: white;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top {
+color: pink;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  display: inline-block;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0px;
+  background: #c4c4f7;
+  transition: all .5s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+/* Sections */
+
+section {
+  display: flex;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  max-width: 670px;
+  height: auto;
+}
+
+.content-left {
+  width: 30%;
+}
+
+img {
+  height: 700px;
+  margin-left: 300px;
+}
+section h1 {
+  font-size: 54px;
+  color: white;
+  text-transform: uppercase;
+}
+
+section h2 {
+  font-size: 25px;
+  color: Grey;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.cta {
+  padding: 15px 30px;
+  background-color: palevioletred;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  background-color: palevioletred;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.item {
+  flex-basis: 100px;
+  flex-grow: 1;
+  height: 200px;
+  background-color: palevioletred;
+  color: #fff;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-of-type(1) {
+margin-left: 50px;
+}
+
+/* .item:nth-of-type(2) {
+
+} */
+
+.item:nth-of-type(3) {
+  margin-right: 50px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: lightpink;
+  height: 350px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 786px) {
+  body {
+    background-color: cyan;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: turquoise;
+  }
+}
+
+h3 {
+  padding: 30px;
+}
+
+p {
+  margin-top: 7px;
+}
